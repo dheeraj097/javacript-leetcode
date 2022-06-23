@@ -8,7 +8,6 @@ function rob(nums) {
     for (let i = 2; i < nums.length; i++) {
         maxLoot.push(Math.max( nums[i] + maxLoot[i-2] , maxLoot[i-1]));
     }
-
     return maxLoot.pop();
 }
 
